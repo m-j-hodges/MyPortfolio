@@ -1,17 +1,27 @@
+
+* {
+  box-sizing:border-box;
+}
 body {
   font-family: 'Radio Canada', sans-serif;
-  box-sizing:border-box;
-  height: 1500px;
+
+  background-color: #d8d8d8;
 }
 
 .cards-section {
   display:flex;
   flex-direction:row;
-  flex: 1 1 30%
+  flex: 1 1 30%;
+}
+
+#background {
+  width:100vw;
+  height:200px;
 }
 
 #background img {
   width: 100vw;
+  display:block;
   height: 200px;
   opacity: .5;
 }
@@ -25,7 +35,7 @@ body {
   margin: auto;
 }
 .cards p {
-  margin:20px;
+  margin:auto;
 }
 
 h3 {
@@ -38,10 +48,16 @@ h3 {
   width: 320px;
   height: 250px;
   border: 4px dashed black;
-  margin: 40px;
+  margin: 20px;
   display:flex;
   flex-direction: column;
+  flex: 1 1 20%;
+  border-radius: 10px;
+}
 
+.cards:hover {
+ background-color:#185aa5;
+ box-shadow: 4px 4px #e8dd9c;
 }
 
 #background {
@@ -67,7 +83,7 @@ h3 {
 .dropmenu img {
   width:50px;
   height:40px;
-  opacity: .7;
+  opacity: .5;
   cursor:pointer;
   z-index: auto;
   background-color: #f4f4f4;
@@ -110,6 +126,7 @@ h1 {
 }
 
 header {
+  display:block;
   width: 100vw;
   background-color: #f4f4f4;
 }
