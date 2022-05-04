@@ -8,10 +8,40 @@ body {
   background-color: #d8d8d8;
 }
 
+.first-card {
+  width: 60%;
+  height: 500px;
+  border: 4px dashed black;
+  margin: 40px auto;
+  display:flex;
+  flex-direction:column;
+  flex: 2 2 30%;
+  text-align: center;
+  float:center;
+  border-radius: 10px;
+  background-color: rgb(181, 178, 178);
+}
+
+.first-card:hover {
+  background-color:#185aa5;
+  box-shadow: 4px 4px #e8dd9c;
+ }
+
+.first-card img {
+  align-content:center;
+  width:33%;
+  height:50%;
+}
+
+.cards-sub {
+  flex-direction:row;
+  display:flex;
+}
+
 .cards-section {
   display:flex;
-  flex-direction:row;
-  flex: 1 1 30%;
+  flex-direction:column;
+  flex: 1 1 20%;
 }
 
 #background {
@@ -26,16 +56,38 @@ body {
   opacity: .5;
 }
 
+.first-card img {
+
+  border:none;
+}
+
 .cards-img {
   width: 100px;
   height: 100px;
   border-radius: 8px;
   border: 3px solid gray;
   opacity: .7;
-  margin: auto;
+  margin: auto
+}
+
+#divider {
+  clear:both;
+  display:block;
+  width:100vw;
+  height:10px;
 }
 .cards p {
-  margin:auto;
+  text-align:center;
+}
+.cards-sub {
+  clear:both;
+  float:left;
+
+}
+.cards-header {
+  font-size: 30px;
+  font-style: italic;
+  color: rgb(244, 73, 0);
 }
 
 h3 {
@@ -51,8 +103,14 @@ h3 {
   margin: 20px;
   display:flex;
   flex-direction: column;
-  flex: 1 1 20%;
+  flex: 2 2 30%;
+  overflow: auto;
   border-radius: 10px;
+  background-color: rgb(181, 178, 178);
+}
+
+.cards h3, .cards p {
+  margin:20px;
 }
 
 .cards:hover {
@@ -77,10 +135,14 @@ h3 {
   width: inherit;
   height: 200px;
   border-radius: 10px;
+  overflow:auto;
 }
-#about-me p {
+.about-me p {
   text-align: center;
-  padding: 40px;
+  font-size: 16px;
+  color: rgb(197, 197, 197);
+  line-height: 1.4em;
+  padding: 0px 40px 0px 40px;
 }
 
 #background h2 {
@@ -169,7 +231,9 @@ h1 {
   padding: 40px;
   margin: auto;
   border-radius: 10px;
-  align-text: center;
+  font-family: 'Koulen', cursive;
+  font-size: 50px;
+  letter-spacing: .1em;
 }
 
 header {
