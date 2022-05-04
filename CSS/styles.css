@@ -64,12 +64,36 @@ h3 {
   margin: 0px;
   padding: 0px;
 }
+.about-me h3 {
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.about-me {
+  background-color: gray;
+  border: 3px solid #b8b4ab60;
+  margin:0px;
+  padding:10px;
+  width: inherit;
+  height: 200px;
+  border-radius: 10px;
+}
+#about-me p {
+  text-align: center;
+  padding: 40px;
+}
+
+#background h2 {
+  padding: 0px 0px 0px 40px;
+}
 #header {
   width: inherit;
   height: 80px;
   border-radius: 6px;
-  display:block;
-  text-align: center;
+  display:flex;
+  flex: 1 1 30%;
+  justify-content: center;
+  margin: 0px auto 0px 150px;
 }
 
 .dropmenu {
@@ -98,12 +122,38 @@ h3 {
   z-index: 1;
 }
 
+
 .drop-content a {
   color: black;
   padding: 12px 20px;
   text-decoration: none;
   display: block;
 }
+
+#background h2 {
+   position: relative;
+   top: -200px;
+   left: 0px;
+   font-size: 30px;
+
+}
+
+#contact-info p {
+  text-align: right;
+  padding: 0px 30px 0px 10px;
+  font-size: 20px;
+}
+
+
+
+#contact-info ul li {
+  display: block;
+  text-align: right;
+  padding: 0px 30px 0px 10px;
+  font-size: 20px;
+
+}
+
 /* change dropdown color on hover */
 .dropmenu a:hover {background-color: #ddd;}
 
@@ -116,17 +166,15 @@ h3 {
 }
 
 h1 {
-  background-color: steelblue;
   padding: 40px;
-  margin: 0px;
-  border: 4px solid #7a8aee;
-  display:inline;
+  margin: auto;
   border-radius: 10px;
-  
+  align-text: center;
 }
 
 header {
-  display:block;
+  display:flex;
+  justify-content: center;
   width: 100vw;
-  background-color: #f4f4f4;
+  background-color: rgb(138, 162, 182);
 }
