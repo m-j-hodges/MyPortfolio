@@ -1,0 +1,25 @@
+h1 {
+  color: rgb(20, 29, 80);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align:center;
+}
+img {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 400px;
+  margin:auto;
+}
+
+.image {
+  justify-content: center;
+  display:flex;
+  width: 100vw;
+  flex: 2 2 30%;
+  flex-direction:column;
+}
+
+header {
+  display:flex;
+  flex-direction: column;
+
+}
