@@ -2,9 +2,23 @@
 * {
   box-sizing:border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Radio Canada', sans-serif;
   background-color: #d8d8d8;
+}
+
+header {
+  display:flex;
+  width: 100vw;
+  background-color: rgb(138, 162, 182);
+  flex: 2 2 50%;
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .first-card {
@@ -56,6 +70,8 @@ a {
   width:100vw;
   height:200px;
 }
+
+
 
 #background img {
   width: 100vw;
@@ -142,13 +158,38 @@ h3 {
 .about-me {
   background-color: gray;
   border: 3px solid #b8b4ab60;
-  margin:0px;
+  margin:20px;
   padding:10px;
-  width: inherit;
   height: 200px;
   border-radius: 10px;
   overflow:auto;
+  float:right;
+  flex: 2 4 40%;
+  display:flex;
+  max-width: 70%;
+  flex-direction: column;
 }
+
+.about-me-section {
+  display:flex;
+  flex: 1 1 50%;
+  flex-direction: row;
+  
+}
+.image-of-me {
+    flex: 3 3 30%;
+    display:flex;
+    margin: 0px 30px;
+}
+
+
+.image-of-me img {
+  border-radius: 6px;
+  max-width: 400px;
+  height: 400px;
+  display:flex;
+}
+
 .about-me p {
   text-align: center;
   font-size: 16px;
@@ -160,15 +201,22 @@ h3 {
 #background h2 {
   padding: 0px 0px 0px 40px;
 }
+
 #header {
-  width: inherit;
+  max-width: inherit;
   height: 80px;
   border-radius: 6px;
   display:flex;
-  flex: 1 1 30%;
+  flex: 3 3 30%;
   justify-content: center;
   margin: 0px auto 0px 150px;
+  text-decoration: underline;
+  overflow:visible;
 }
+@media screen and (max-width:1300px) {
+  #header h1 { font-size: 30px;}
+}
+
 
 .dropmenu {
   padding:20px;
@@ -243,14 +291,21 @@ h1 {
   padding: 40px;
   margin: auto;
   border-radius: 10px;
-  font-family: 'Koulen', cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   letter-spacing: .1em;
 }
 
-header {
-  display:flex;
-  justify-content: center;
+footer {
   width: 100vw;
-  background-color: rgb(138, 162, 182);
+  height: 200px;
+  font-size: 20px;
+  background-color:black;
+}
+
+footer p {
+  font-weight: 700;
+  text-align:center;
+  color: rgb(203, 202, 202);
+  border: 2px solid #aeb1623c;
 }
